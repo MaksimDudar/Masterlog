@@ -1,15 +1,74 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Masterlog</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
   </head>
 
   <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <header>
+              <div class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+                <div class="container">
+                  <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                    <a href="/" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
+                      <img src="4.gif" alt="Master" width="90" height="60">
+                    </a>
+
+                    <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small fw-semibold">
+                      <li>
+                        <a href="#" class="nav-link active text-black">
+                          <svg class="bi d-block mx-auto mb-1" width="24" height="8">
+                          <img style='position:relative;left:60px;bottom:30px;' border="0" alt="W3Schools" src="7.png" width="60" height="60">
+                            <use xlink:href="#house-fill"></use></svg>
+                          Главная
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="nav-link text-black">
+                          <svg class="bi d-block mx-auto mb-1" width="24" height="8">
+                            <img style='position:relative;left:80px;bottom:30px;' border="0" alt="W3Schools" src="8.png" width="60" height="60">
+                              <use xlink:href="#speedometer2"></use></svg>
+                          О компании
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="nav-link text-black">
+                          <svg class="bi d-block mx-auto mb-1" width="24" height="8">
+                            <img style='position:relative;left:80px;bottom:30px;' border="0" alt="W3Schools" src="9.png" width="60" height="60">
+                            <use xlink:href="#table"></use></svg>
+                          Услуги
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="nav-link text-black">
+                          <svg class="bi d-block mx-auto mb-1" width="24" height="8">
+                            <img style='position:relative;left:80px;bottom:30px;' border="0" alt="W3Schools" src="5.png" width="60" height="60">
+                            <use xlink:href="#grid"></use></svg>
+                          Автопарк
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="nav-link text-black">
+                          <svg class="bi d-block mx-auto mb-1" width="24" height="8">
+                            <img style='position:relative;left:80px;bottom:30px;' border="0" alt="W3Schools" src="10.png" width="60" height="60">
+                            <use xlink:href="#people-circle"></use></svg>
+                          Контакты
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </header>
     <%= yield %>
+    </div>
+  </div>
+</div>
   </body>
 </html>
