@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :carpark
   resources :service
   resources :company
   get 'home/index'
