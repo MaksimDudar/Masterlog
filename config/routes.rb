@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :blogs
   resources :assistance
   resources :contact
   resources :carpark
