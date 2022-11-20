@@ -10,10 +10,43 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_11_18_121403) do
+ActiveRecord::Schema[7.0].define(version: 2022_11_20_220043) do
   create_table "blogs", force: :cascade do |t|
     t.string "title"
     t.text "body"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "cards", force: :cascade do |t|
+    t.string "strana"
+    t.string "strana1"
+    t.string "truck"
+    t.string "driver"
+    t.string "manager"
+    t.integer "rating"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "mastercars", force: :cascade do |t|
+    t.string "strana"
+    t.string "strana1"
+    t.string "truck"
+    t.string "driver"
+    t.string "manager"
+    t.integer "rating"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "masters", force: :cascade do |t|
+    t.string "strana"
+    t.string "strana1"
+    t.string "truck"
+    t.string "driver"
+    t.string "manager"
+    t.integer "rating"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

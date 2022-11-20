@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  resources :cards
+  resources :mastercars
+  resources :masters
+  resources :grade
   resources :blogs
   resources :assistance
   resources :contact
